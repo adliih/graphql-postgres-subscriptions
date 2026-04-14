@@ -26,7 +26,7 @@ Yarn / pnpm equivalents: `yarn add github:adliih/graphql-postgres-subscriptions`
 ### Other ways to distribute
 
 - **GitHub Packages (npm)** — publish to `https://npm.pkg.github.com` with a `GITHUB_TOKEN` / PAT; consumers set `.npmrc` for the scope. No npmjs.com account required beyond GitHub access to the package.
-- **Release assets** — run `npm pack` in CI, attach the `.tgz` to a GitHub Release; consumers run `npm install ./graphql-postgres-subscriptions-3.0.0.tgz`.
+- **Release assets** — run `npm pack`, attach the `.tgz` to a GitHub Release; consumers run `npm install ./graphql-postgres-subscriptions-3.0.0.tgz`.
 - **Commit `dist/`** — if you need minimal install size and no compile step, stop ignoring `dist/` and commit built output (tradeoff: noisier diffs).
 
 ## Usage
