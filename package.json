@@ -26,16 +26,22 @@
     "pg": "^8.0.0"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.0",
+    "@semantic-release/git": "^10.0.0",
+    "@semantic-release/github": "^11.0.0",
+    "@semantic-release/npm": "^12.0.0",
     "@types/jest": "^29.0.0",
     "@types/pg": "^8.0.0",
     "graphql": "^16.0.0",
     "jest": "^29.0.0",
+    "semantic-release": "^24.0.0",
     "ts-jest": "^29.0.0",
     "typescript": "^5.0.0"
   },
   "scripts": {
     "build": "tsc",
     "test": "jest --forceExit",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "release": "semantic-release"
   }
 }
