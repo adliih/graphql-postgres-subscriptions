@@ -1,14 +1,33 @@
 # @adliih/graphql-postgres-subscriptions
 
-[![Build Status](https://travis-ci.org/GraphQLCollege/graphql-postgres-subscriptions.svg?branch=master)](https://travis-ci.org/GraphQLCollege/graphql-postgres-subscriptions)
-
 A graphql subscriptions implementation using postgres and apollo's graphql-subscriptions.
 
 This package implements the PubSubEngine Interface from the graphql-subscriptions package and also the new AsyncIterator interface. It allows you to connect your subscriptions manger to a postgres based Pub Sub mechanism to support multiple subscription manager instances.
 
 ## Installation
 
-`yarn add @adliih/graphql-postgres-subscriptions` or `npm install @adliih/graphql-postgres-subscriptions --save`
+The scoped name is not on the public npm registry yet. Install **from GitHub** (the `prepare` script runs `tsc` so `dist/` exists after install):
+
+```bash
+npm install github:adliih/graphql-postgres-subscriptions
+```
+
+Pin a branch, tag, or commit:
+
+```bash
+npm install github:adliih/graphql-postgres-subscriptions#main
+npm install github:adliih/graphql-postgres-subscriptions#v3.0.0
+```
+
+Yarn / pnpm equivalents: `yarn add github:adliih/graphql-postgres-subscriptions` or `pnpm add github:adliih/graphql-postgres-subscriptions`.
+
+**Note:** Installing from git relies on this package’s devDependencies (e.g. TypeScript) for the build. Avoid root installs with `npm install --omit=dev` (or production-only CI) unless you vendor a prebuilt copy (e.g. `npm pack` tarball from a release).
+
+### Other ways to distribute
+
+- **GitHub Packages (npm)** — publish to `https://npm.pkg.github.com` with a `GITHUB_TOKEN` / PAT; consumers set `.npmrc` for the scope. No npmjs.com account required beyond GitHub access to the package.
+- **Release assets** — run `npm pack` in CI, attach the `.tgz` to a GitHub Release; consumers run `npm install ./graphql-postgres-subscriptions-3.0.0.tgz`.
+- **Commit `dist/`** — if you need minimal install size and no compile step, stop ignoring `dist/` and commit built output (tradeoff: noisier diffs).
 
 ## Usage
 
