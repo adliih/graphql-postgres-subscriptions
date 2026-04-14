@@ -1,4 +1,4 @@
-# graphql-postgres-subscriptions
+# @adliih/graphql-postgres-subscriptions
 
 [![Build Status](https://travis-ci.org/GraphQLCollege/graphql-postgres-subscriptions.svg?branch=master)](https://travis-ci.org/GraphQLCollege/graphql-postgres-subscriptions)
 
@@ -8,7 +8,7 @@ This package implements the PubSubEngine Interface from the graphql-subscription
 
 ## Installation
 
-`yarn add graphql-postgres-subscriptions` or `npm install graphql-postgres-subscriptions --save`
+`yarn add @adliih/graphql-postgres-subscriptions` or `npm install @adliih/graphql-postgres-subscriptions --save`
 
 ## Usage
 
@@ -27,7 +27,7 @@ export const pubsub = new PubSub();
 
 ```js
 // After
-import { PostgresPubSub } from "graphql-postgres-subscriptions";
+import { PostgresPubSub } from "@adliih/graphql-postgres-subscriptions";
 
 export const pubsub = new PostgresPubSub();
 ```
@@ -43,7 +43,7 @@ You can also pass [node-postgres connection options](https://node-postgres.com/f
 You can instantiate your own `client` and pass it to `PostgresPubSub`. Like this:
 
 ```js
-import { PostgresPubSub } from "graphql-postgres-subscriptions";
+import { PostgresPubSub } from "@adliih/graphql-postgres-subscriptions";
 import { Client } from "pg";
 
 const client = new Client();
