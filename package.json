@@ -1,5 +1,5 @@
 {
-  "name": "@adliih/graphql-postgres-subscriptions",
+  "name": "@adliihjs/graphql-postgres-subscriptions",
   "publishConfig": {
     "access": "public"
   },

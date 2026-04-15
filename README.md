@@ -1,4 +1,4 @@
-# @adliih/graphql-postgres-subscriptions
+# @adliihjs/graphql-postgres-subscriptions
 
 A graphql subscriptions implementation using postgres and apollo's graphql-subscriptions.
 
@@ -46,7 +46,7 @@ export const pubsub = new PubSub();
 
 ```js
 // After
-import { PostgresPubSub } from "@adliih/graphql-postgres-subscriptions";
+import { PostgresPubSub } from "@adliihjs/graphql-postgres-subscriptions";
 
 export const pubsub = new PostgresPubSub();
 ```
@@ -62,7 +62,7 @@ You can also pass [node-postgres connection options](https://node-postgres.com/f
 You can instantiate your own `client` and pass it to `PostgresPubSub`. Like this:
 
 ```js
-import { PostgresPubSub } from "@adliih/graphql-postgres-subscriptions";
+import { PostgresPubSub } from "@adliihjs/graphql-postgres-subscriptions";
 import { Client } from "pg";
 
 const client = new Client();

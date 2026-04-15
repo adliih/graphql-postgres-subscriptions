@@ -11,4 +11,4 @@
 
 ### BREAKING CHANGES
 
-* Publish as @adliih/graphql-postgres-subscriptions with compiled dist/, graphql-subscriptions v3, and TypeScript typings. Remove legacy index.js and postgres-pubsub.js entrypoints; import from the package main/types. Requires Node 14+ and graphql as a peer dependency.
+* Publish as @adliihjs/graphql-postgres-subscriptions with compiled dist/, graphql-subscriptions v3, and TypeScript typings. Remove legacy index.js and postgres-pubsub.js entrypoints; import from the package main/types. Requires Node 14+ and graphql as a peer dependency.
